@@ -3,6 +3,7 @@ from pyln.testing.utils import wait_for
 from pprint import pprint
 import os
 import time
+import unittest
 
 
 plugin = os.path.join(os.path.dirname(__file__), 'jitrebalance.py')
