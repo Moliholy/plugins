@@ -8,6 +8,7 @@ import time
 plugin = os.path.join(os.path.dirname(__file__), 'jitrebalance.py')
 
 
+@unittest.skipIf(not DEVELOPER, "gossip is too slow if we're not in developer mode")
 def test_simple_rebalance(node_factory):
     """Simple rebalance that routes along a cycle to enable the original payment
 
