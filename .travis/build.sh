@@ -46,4 +46,4 @@ fi
 # Collect libraries that the plugins need and install them
 find . -name requirements.txt -exec pip3 install --user -r {} \;
 
-pytest -vvv --timeout=550 --timeout_method=thread -p no:logging
+pytest -vvv --timeout=550 --timeout_method=thread -p no:logging -n 10
