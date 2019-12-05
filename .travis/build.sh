@@ -23,7 +23,8 @@ pyenv global 3.7.1
 pip3 install --user --quiet \
      mako==1.0.14 \
      psycopg2-binary==2.8.3 \
-     pytest-timeout==1.3.3
+     pytest-timeout==1.3.3 \
+     pytest-xdist==1.30.0
 
 # Install the pyln-client and testing library matching the
 
